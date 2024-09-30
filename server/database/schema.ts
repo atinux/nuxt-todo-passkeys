@@ -5,7 +5,7 @@ import type { WebAuthnCredential } from '#auth-utils'
 export const users = sqliteTable('users', {
   id: integer('id').primaryKey(),
   username: text('username').notNull().unique(),
-  name: text('name'),
+  name: text('name').notNull(),
   createdAt: integer('created_at', { mode: 'timestamp' }).notNull(),
   lastLoginAt: integer('last_login_at', { mode: 'timestamp' }).notNull()
 })

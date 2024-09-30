@@ -20,10 +20,11 @@ CREATE TABLE `todos` (
 CREATE TABLE `users` (
 	`id` integer PRIMARY KEY NOT NULL,
 	`username` text NOT NULL,
-	`name` text,
+	`name` text NOT NULL,
 	`created_at` integer NOT NULL,
 	`last_login_at` integer NOT NULL
 );
 --> statement-breakpoint
 CREATE UNIQUE INDEX `credentials_id_unique` ON `credentials` (`id`);--> statement-breakpoint
-CREATE UNIQUE INDEX `credentials_user_id_id_unique` ON `credentials` (`user_id`,`id`);
+CREATE UNIQUE INDEX `credentials_user_id_id_unique` ON `credentials` (`user_id`,`id`);--> statement-breakpoint
+CREATE UNIQUE INDEX `users_username_unique` ON `users` (`username`);

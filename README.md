@@ -1,22 +1,20 @@
-# Manage your Todos with Atidone ☑️
+# Manage your Todos using Passkeys
 
 A demonstration using [Nuxt](https://nuxt.com) with server-side rendering on the edge, authentication and database querying using [Cloudflare D1](https://developers.cloudflare.com/d1/).
 
-[![Deploy to NuxtHub](https://hub.nuxt.com/button.svg)](https://admin.hub.nuxt.com/new?template=todos)
+This demo is a fork of [atidone](https://github.com/atinux/atidone) but using Passkeys for authentication with [nuxt-auth-utils](https://github.com/atinux/nuxt-auth-utils).
 
 ## Features
 
 - [Server-Side Rendering on the Edge](https://nuxt.com/blog/nuxt-on-the-edge)
-- Authentication backed-in using [nuxt-auth-utils](https://github.com/atinux/nuxt-auth-utils)
+- Passkeys authentication backed-in using [nuxt-auth-utils](https://github.com/atinux/nuxt-auth-utils)
 - Leverage [Cloudflare D1](https://developers.cloudflare.com/d1/) as database and [drizzle ORM](https://orm.drizzle.team/) using [`hubDatabase()`](https://hub.nuxt.com/docs/storage/database)
 - User interface made with [Nuxt UI](https://ui.nuxt.com)
 - Embed [Drizzle Studio](https://orm.drizzle.team/drizzle-studio/overview/) in the [Nuxt DevTools](https://devtools.nuxt.com)
 
 ## Live demo
 
-https://todos.nuxt.dev
-
-https://github.com/atinux/atidone/assets/904724/5f3bee55-dbae-4329-8057-7d0e16e92f81
+https://todos-passkeys.nuxt.dev
 
 ## Setup
 
@@ -26,22 +24,13 @@ Make sure to install the dependencies using [pnpm](https://pnpm.io/):
 pnpm i
 ```
 
-Create a [GitHub Oauth Application](https://github.com/settings/applications/new) with:
-- Homepage url: `http://localhost:3000`
-- Callback url: `http://localhost:3000/api/auth/github`
-
-Add the variables in the `.env` file:
+To create sealed sessions, you also need to add `NUXT_SESSION_PASSWORD` in the `.env` with at least 32 characters:
 
 ```bash
-NUXT_OAUTH_GITHUB_CLIENT_ID="my-github-oauth-app-id"
-NUXT_OAUTH_GITHUB_CLIENT_SECRET="my-github-oauth-app-secret"
+NUXT_SESSION_PASSWORD="your-super-long-secret-for-session-encryption"
 ```
 
-To create sealed sessions, you also need to add `NUXT_SESSION_SECRET` in the `.env` with at least 32 characters:
-
-```bash
-NUXT_SESSION_SECRET="your-super-long-secret-for-session-encryption"
-```
+If you don't specify it, one will be generated for you.
 
 ## Development
 

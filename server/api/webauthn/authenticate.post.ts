@@ -32,7 +32,7 @@ export default defineWebAuthnAuthenticateEventHandler({
     await setUserSession(event, {
       user: {
         id: credential.user.id,
-        name: credential.user.name || credential.user.username,
+        name: credential.user.name,
         username: credential.user.username
       }
     })

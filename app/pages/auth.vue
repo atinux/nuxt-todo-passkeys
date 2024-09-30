@@ -65,7 +65,7 @@ async function signIn() {
           />
         </UFormGroup>
         <UFormGroup
-          label="Name"
+          label="Full Name"
           required
         >
           <UInput
@@ -90,7 +90,6 @@ async function signIn() {
       >
         <UFormGroup
           label="Username"
-          required
         >
           <UInput
             v-model="username"
