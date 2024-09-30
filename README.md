@@ -14,7 +14,7 @@ This demo is a fork of [atidone](https://github.com/atinux/atidone) but using Pa
 
 ## Live demo
 
-https://todos-passkeys.nuxt.dev
+https://todo-passkeys.nuxt.dev
 
 ## Setup
 
