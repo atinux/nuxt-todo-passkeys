@@ -19,9 +19,9 @@ useHead({
 
 useSeoMeta({
   viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
-  title: 'Atidone',
+  title: 'Todo with Passkeys',
   description:
-    'A Nuxt demo hosted with edge-side rendering, authentication and queyring a Cloudflare D1 database',
+    'A Nuxt demo hosted on NuxtHub using passkeys for authentication and queyring a Cloudflare D1 database',
   ogImage: '/social-image.png',
   twitterImage: '/social-image.png',
   twitterCard: 'summary_large_image'
@@ -44,11 +44,11 @@ useSeoMeta({
 
     <footer class="text-center mt-2">
       <NuxtLink
-        href="https://github.com/atinux/atidone"
+        href="https://github.com/atinux/todo-passkeys"
         target="_blank"
         class="text-sm text-gray-500 hover:text-gray-700"
       >
-        GitHub
+        source code
       </NuxtLink>
       ·
       <NuxtLink
@@ -56,7 +56,7 @@ useSeoMeta({
         target="_blank"
         class="text-sm text-gray-500 hover:text-gray-700"
       >
-        Twitter
+        @atinux
       </NuxtLink>
     </footer>
   </UContainer>

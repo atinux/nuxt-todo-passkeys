@@ -8,14 +8,14 @@ const { loggedIn } = useUserSession()
       <h3 class="text-lg font-semibold leading-6">
         Todo List
       </h3>
-      <UButton
-        v-if="!loggedIn"
-        to="/api/auth/github"
-        icon="i-simple-icons-github"
-        label="Login with GitHub"
-        color="black"
-        external
-      />
+      <div v-if="!loggedIn">
+        <UButton
+          to="/auth"
+          icon="i-ph-fingerprint"
+          label="Authenticate"
+          color="black"
+        />
+      </div>
       <UButton
         v-else
         to="/todos"
@@ -25,7 +25,7 @@ const { loggedIn } = useUserSession()
       />
     </template>
     <p class="font-medium">
-      Welcome to Atidone.
+      Welcome to Todo Passkeys.
     </p>
     <p>
       A <a
@@ -47,6 +47,7 @@ const { loggedIn } = useUserSession()
         Cloudflare D1 database
       </NuxtLink>.
     </p>
+    <p>It is using passkeys for authentication with <a href="https://github.com/atinux/nuxt-auth-utils" target="_blank" rel="noopener" class="text-primary-500">nuxt-auth-utils</a>.</p>
     <p>
       It is made using <a
         href="https://hub.nuxt.com"

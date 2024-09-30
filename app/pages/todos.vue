@@ -59,6 +59,10 @@ async function deleteTodo(todo) {
 }
 
 const items = [[{
+  slot: 'account',
+  label: '',
+  disabled: true
+}], [{
   label: 'Logout',
   icon: 'i-heroicons-arrow-left-on-rectangle',
   click: clear
@@ -79,16 +83,20 @@ const items = [[{
         :items="items"
       >
         <UButton
-          color="white"
+          color="gray"
+          icon="i-heroicons-user-circle"
           trailing-icon="i-heroicons-chevron-down-20-solid"
+          variant="ghost"
         >
-          <UAvatar
-            :src="`https://github.com/${user.login}.png`"
-            :alt="user.login"
-            size="3xs"
-          />
-          {{ user.login }}
+          {{ user.name }}
         </UButton>
+        <template #account>
+          <div class="flex-1 min-w-0 text-left">
+            <p>
+              Signed in as {{ user?.username }}
+            </p>
+          </div>
+        </template>
       </UDropdown>
     </template>
 
