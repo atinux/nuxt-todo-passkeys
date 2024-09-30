@@ -8,9 +8,9 @@ importers:
 
   .:
     dependencies:
-      '@iconify-json/simple-icons':
-        specifier: ^1.2.4
-        version: 1.2.4
+      '@iconify-json/ph':
+        specifier: ^1.2.0
+        version: 1.2.0
       '@nuxt/eslint':
         specifier: ^0.5.7
         version: 0.5.7(eslint@9.11.1(jiti@1.21.6))(magicast@0.3.5)(rollup@4.20.0)(typescript@5.6.2)(vite@5.4.8(@types/node@22.1.0)(terser@5.31.4))(webpack-sources@3.2.3)
@@ -39,8 +39,8 @@ importers:
         specifier: ^3.13.2
         version: 3.13.2(@parcel/watcher@2.4.1)(@types/node@22.1.0)(drizzle-orm@0.33.0(@cloudflare/workers-types@4.20240925.0)(@opentelemetry/api@1.9.0))(encoding@0.1.13)(eslint@9.11.1(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.20.0)(terser@5.31.4)(typescript@5.6.2)(vite@5.4.8(@types/node@22.1.0)(terser@5.31.4))(webpack-sources@3.2.3)
       nuxt-auth-utils:
-        specifier: https://pkg.pr.new/atinux/nuxt-auth-utils@aa24feb
-        version: https://pkg.pr.new/atinux/nuxt-auth-utils@aa24feb(@simplewebauthn/browser@10.0.0)(@simplewebauthn/server@10.0.1(encoding@0.1.13))(magicast@0.3.5)(rollup@4.20.0)(webpack-sources@3.2.3)
+        specifier: ^0.4.0
+        version: 0.4.0(@simplewebauthn/browser@10.0.0)(@simplewebauthn/server@10.0.1(encoding@0.1.13))(magicast@0.3.5)(rollup@4.20.0)(webpack-sources@3.2.3)
       zod:
         specifier: ^3.23.8
         version: 3.23.8
@@ -1238,8 +1238,8 @@ packages:
   '@iconify-json/heroicons@1.2.0':
     resolution: {integrity: sha512-EmvGN0L9EUJCmQ82rkLGZ4tkz0YGQfZV7ugKT6UvHni/bxNitQrD0gLj6NJj2W9zsSoXyNHyCX236+EJmO4pmA==}
 
-  '@iconify-json/simple-icons@1.2.4':
-    resolution: {integrity: sha512-AKUGO7cX2KykFEJ+P6tY3wGhGgbrL3RMqbxNTfutGsKojaSEFosN/cmWQ9l9hmUiS2IN7fVLsPMAIvV1uJyyVw==}
+  '@iconify-json/ph@1.2.0':
+    resolution: {integrity: sha512-013eLpgTmX1lACOuDnkuhC7gRHyYj9w/j8SyDmlyUYvsKQrwdRsv1otcXtwH3DevuDAzSkreeeRsCeez+gTyVA==}
 
   '@iconify/collections@1.0.465':
     resolution: {integrity: sha512-40sG1esFVHw4WdT9vH16FAu21KqZqudGHLCDs4uRAnLaym1XFXLJYzT1YEYlaV+mz3N7DQMBcjuJqQFPFFz42Q==}
@@ -3893,9 +3893,8 @@ packages:
     engines: {node: ^16.10.0 || >=18.0.0}
     hasBin: true
 
-  nuxt-auth-utils@https://pkg.pr.new/atinux/nuxt-auth-utils@aa24feb:
-    resolution: {tarball: https://pkg.pr.new/atinux/nuxt-auth-utils@aa24feb}
-    version: 0.3.9
+  nuxt-auth-utils@0.4.0:
+    resolution: {integrity: sha512-Tn5TtFIazDlteWq3Kt8csZLdgB8JGqmfL1QW/pgI+rZ89dR0OUD3f8SFZLO3pSoYhm5dFrOC1HR43dGPjc/81g==}
     peerDependencies:
       '@simplewebauthn/browser': ^10.0.0
       '@simplewebauthn/server': ^10.0.1
@@ -3933,6 +3932,9 @@ packages:
 
   ofetch@1.3.4:
     resolution: {integrity: sha512-KLIET85ik3vhEfS+3fDlc/BAZiAp+43QEC/yCo5zkNoY2YaKvNkOaFr/6wCFgFH1kuYQM5pMNi0Tg8koiIemtw==}
+
+  ofetch@1.4.0:
+    resolution: {integrity: sha512-MuHgsEhU6zGeX+EMh+8mSMrYTnsqJQQrpM00Q6QHMKNqQ0bKy0B43tk8tL1wg+CnsSTy1kg4Ir2T5Ig6rD+dfQ==}
 
   ohash@1.1.3:
     resolution: {integrity: sha512-zuHHiGTYTA1sYJ/wZN+t5HKZaH23i4yI1HMwbuXm24Nid7Dv0KcuRlKoNKS9UNfAVSBlnGLcuQrnOKWOZoEGaw==}
@@ -6151,7 +6153,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/simple-icons@1.2.4':
+  '@iconify-json/ph@1.2.0':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -9480,13 +9482,13 @@ snapshots:
 
   nuxi@3.14.0: {}
 
-  nuxt-auth-utils@https://pkg.pr.new/atinux/nuxt-auth-utils@aa24feb(@simplewebauthn/browser@10.0.0)(@simplewebauthn/server@10.0.1(encoding@0.1.13))(magicast@0.3.5)(rollup@4.20.0)(webpack-sources@3.2.3):
+  nuxt-auth-utils@0.4.0(@simplewebauthn/browser@10.0.0)(@simplewebauthn/server@10.0.1(encoding@0.1.13))(magicast@0.3.5)(rollup@4.20.0)(webpack-sources@3.2.3):
     dependencies:
       '@adonisjs/hash': 9.0.5
       '@nuxt/kit': 3.13.2(magicast@0.3.5)(rollup@4.20.0)(webpack-sources@3.2.3)
       defu: 6.1.4
       hookable: 5.5.3
-      ofetch: 1.3.4
+      ofetch: 1.4.0
       ohash: 1.1.4
       pathe: 1.1.2
       scule: 1.3.0
@@ -9629,6 +9631,12 @@ snapshots:
   object-hash@3.0.0: {}
 
   ofetch@1.3.4:
+    dependencies:
+      destr: 2.0.3
+      node-fetch-native: 1.6.4
+      ufo: 1.5.4
+
+  ofetch@1.4.0:
     dependencies:
       destr: 2.0.3
       node-fetch-native: 1.6.4

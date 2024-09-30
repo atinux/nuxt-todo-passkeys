@@ -13,6 +13,11 @@ export default defineNuxtConfig({
   hub: {
     database: true
   },
+  icon: {
+    clientBundle: {
+      scan: true
+    }
+  },
   // Development config
   eslint: {
     config: {
