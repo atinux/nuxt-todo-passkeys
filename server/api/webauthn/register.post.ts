@@ -2,8 +2,8 @@ import { z } from 'zod'
 
 export default defineWebAuthnRegisterEventHandler({
   validateUser: user => z.object({
-    userName: z.string().min(3),
-    displayName: z.string().min(3)
+    userName: z.string().min(1).toLowerCase().trim(),
+    displayName: z.string().min(1).trim()
   }).parseAsync(user),
   async onSuccess(event, { user, credential }) {
     const db = useDB()
