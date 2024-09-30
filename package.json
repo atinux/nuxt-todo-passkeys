@@ -19,7 +19,7 @@
     "drizzle-orm": "0.33.0",
     "h3-zod": "^0.5.3",
     "nuxt": "^3.13.2",
-    "nuxt-auth-utils": "https://pkg.pr.new/atinux/nuxt-auth-utils@f500bf2",
+    "nuxt-auth-utils": "https://pkg.pr.new/atinux/nuxt-auth-utils@aa24feb",
     "zod": "^3.23.8"
   },
   "devDependencies": {
