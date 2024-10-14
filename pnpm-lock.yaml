@@ -21,11 +21,11 @@ importers:
         specifier: ^0.7.27
         version: 0.7.27(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.20.0)(vite@5.4.8(@types/node@22.1.0)(terser@5.31.4))(webpack-sources@3.2.3)
       '@simplewebauthn/browser':
-        specifier: ^11.0.0
-        version: 11.0.0
+        specifier: ^10.0.0
+        version: 10.0.0
       '@simplewebauthn/server':
-        specifier: ^11.0.0
-        version: 11.0.0(encoding@0.1.13)
+        specifier: ^10.0.1
+        version: 10.0.1(encoding@0.1.13)
       drizzle-kit:
         specifier: ^0.25.0
         version: 0.25.0
@@ -40,7 +40,7 @@ importers:
         version: 3.13.2(@parcel/watcher@2.4.1)(@types/node@22.1.0)(drizzle-orm@0.34.1(@cloudflare/workers-types@4.20241011.0)(@opentelemetry/api@1.9.0))(encoding@0.1.13)(eslint@9.12.0(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.20.0)(terser@5.31.4)(typescript@5.6.3)(vite@5.4.8(@types/node@22.1.0)(terser@5.31.4))(webpack-sources@3.2.3)
       nuxt-auth-utils:
         specifier: ^0.4.4
-        version: 0.4.4(@simplewebauthn/browser@11.0.0)(@simplewebauthn/server@11.0.0(encoding@0.1.13))(magicast@0.3.5)(rollup@4.20.0)(webpack-sources@3.2.3)
+        version: 0.4.4(@simplewebauthn/browser@10.0.0)(@simplewebauthn/server@10.0.1(encoding@0.1.13))(magicast@0.3.5)(rollup@4.20.0)(webpack-sources@3.2.3)
       zod:
         specifier: ^3.23.8
         version: 3.23.8
@@ -1714,15 +1714,15 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@simplewebauthn/browser@11.0.0':
-    resolution: {integrity: sha512-KEGCStrl08QC2I561BzxqGiwoknblP6O1YW7jApdXLPtIqZ+vgJYAv8ssLCdm1wD8HGAHd49CJLkUF8X70x/pg==}
+  '@simplewebauthn/browser@10.0.0':
+    resolution: {integrity: sha512-hG0JMZD+LiLUbpQcAjS4d+t4gbprE/dLYop/CkE01ugU/9sKXflxV5s0DRjdz3uNMFecatRfb4ZLG3XvF8m5zg==}
 
-  '@simplewebauthn/server@11.0.0':
-    resolution: {integrity: sha512-zu8dxKcPiRUNSN2kmrnNOzNbRI8VaR/rL4ENCHUfC6PEE7SAAdIql9g5GBOd/wOVZolIsaZz3ccFxuGoVP0iaw==}
+  '@simplewebauthn/server@10.0.1':
+    resolution: {integrity: sha512-djNWcRn+H+6zvihBFJSpG3fzb0NQS9c/Mw5dYOtZ9H+oDw8qn9Htqxt4cpqRvSOAfwqP7rOvE9rwqVaoGGc3hg==}
     engines: {node: '>=20.0.0'}
 
-  '@simplewebauthn/types@11.0.0':
-    resolution: {integrity: sha512-b2o0wC5u2rWts31dTgBkAtSNKGX0cvL6h8QedNsKmj8O4QoLFQFR3DBVBUlpyVEhYKA+mXGUaXbcOc4JdQ3HzA==}
+  '@simplewebauthn/types@10.0.0':
+    resolution: {integrity: sha512-SFXke7xkgPRowY2E+8djKbdEznTVnD5R6GO7GPTthpHrokLvNKw8C3lFZypTxLI7KkCfGPfhtqB3d7OVGGa9jQ==}
 
   '@sindresorhus/merge-streams@2.3.0':
     resolution: {integrity: sha512-LtoMMhxAlorcGhmFYI+LhPgbPZCkgP6ra1YL604EeF6U98pLlQ3iWIGMdWSC+vWmPBWBNgmDBAhnAobLROJmwg==}
@@ -6956,11 +6956,11 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.20.0':
     optional: true
 
-  '@simplewebauthn/browser@11.0.0':
+  '@simplewebauthn/browser@10.0.0':
     dependencies:
-      '@simplewebauthn/types': 11.0.0
+      '@simplewebauthn/types': 10.0.0
 
-  '@simplewebauthn/server@11.0.0(encoding@0.1.13)':
+  '@simplewebauthn/server@10.0.1(encoding@0.1.13)':
     dependencies:
       '@hexagon/base64': 1.1.28
       '@levischuck/tiny-cbor': 0.2.2
@@ -6969,12 +6969,12 @@ snapshots:
       '@peculiar/asn1-rsa': 2.3.13
       '@peculiar/asn1-schema': 2.3.13
       '@peculiar/asn1-x509': 2.3.13
-      '@simplewebauthn/types': 11.0.0
+      '@simplewebauthn/types': 10.0.0
       cross-fetch: 4.0.0(encoding@0.1.13)
     transitivePeerDependencies:
       - encoding
 
-  '@simplewebauthn/types@11.0.0': {}
+  '@simplewebauthn/types@10.0.0': {}
 
   '@sindresorhus/merge-streams@2.3.0': {}
 
@@ -9452,7 +9452,7 @@ snapshots:
 
   nuxi@3.14.0: {}
 
-  nuxt-auth-utils@0.4.4(@simplewebauthn/browser@11.0.0)(@simplewebauthn/server@11.0.0(encoding@0.1.13))(magicast@0.3.5)(rollup@4.20.0)(webpack-sources@3.2.3):
+  nuxt-auth-utils@0.4.4(@simplewebauthn/browser@10.0.0)(@simplewebauthn/server@10.0.1(encoding@0.1.13))(magicast@0.3.5)(rollup@4.20.0)(webpack-sources@3.2.3):
     dependencies:
       '@adonisjs/hash': 9.0.5
       '@nuxt/kit': 3.13.2(magicast@0.3.5)(rollup@4.20.0)(webpack-sources@3.2.3)
@@ -9464,8 +9464,8 @@ snapshots:
       scule: 1.3.0
       uncrypto: 0.1.3
     optionalDependencies:
-      '@simplewebauthn/browser': 11.0.0
-      '@simplewebauthn/server': 11.0.0(encoding@0.1.13)
+      '@simplewebauthn/browser': 10.0.0
+      '@simplewebauthn/server': 10.0.1(encoding@0.1.13)
     transitivePeerDependencies:
       - argon2
       - bcrypt
