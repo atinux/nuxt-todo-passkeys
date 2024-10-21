@@ -10,6 +10,7 @@ export default defineWebAuthnAuthenticateEventHandler({
         message: 'Challenge not found or expired'
       })
     }
+    await hubKV().del(`challenge:${attemptId}`)
     return challenge
   },
   async allowCredentials(event, userName) {
