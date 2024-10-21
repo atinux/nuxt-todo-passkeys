@@ -1,4 +1,18 @@
 export default defineWebAuthnAuthenticateEventHandler({
+  async storeChallenge(event, challenge, attemptId) {
+    await hubKV().set(`challenge:${attemptId}`, challenge, { ttl: 60 })
+  },
+  async getChallenge(event, attemptId) {
+    const challenge = await hubKV().get<string>(`auth:challenge:${attemptId}`)
+    if (!challenge) {
+      throw createError({
+        statusCode: 400,
+        message: 'Challenge not found or expired'
+      })
+    }
+    await hubKV().del(`auth:challenge:${attemptId}`)
+    return challenge
+  },
   async allowCredentials(event, userName) {
     const db = useDB()
 
