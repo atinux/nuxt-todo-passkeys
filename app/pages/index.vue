@@ -47,7 +47,14 @@ const { loggedIn } = useUserSession()
         Cloudflare D1 database
       </NuxtLink>.
     </p>
-    <p>It is using passkeys for authentication with <a href="https://github.com/atinux/nuxt-auth-utils" target="_blank" rel="noopener" class="text-primary-500">nuxt-auth-utils</a>.</p>
+    <p>
+      It is using passkeys for authentication with <a
+        href="https://github.com/atinux/nuxt-auth-utils"
+        target="_blank"
+        rel="noopener"
+        class="text-primary-500"
+      >nuxt-auth-utils</a>.
+    </p>
     <p>
       It is made using <a
         href="https://hub.nuxt.com"
