@@ -1,6 +1,6 @@
 export default defineWebAuthnAuthenticateEventHandler({
   async storeChallenge(event, challenge, attemptId) {
-    await hubKV().set(`challenge:${attemptId}`, challenge, { ttl: 60 })
+    await hubKV().set(`auth:challenge:${attemptId}`, challenge, { ttl: 60 })
   },
   async getChallenge(event, attemptId) {
     const challenge = await hubKV().get<string>(`auth:challenge:${attemptId}`)

@@ -12,7 +12,7 @@ export default defineWebAuthnRegisterEventHandler({
         message: 'Challenge not found or expired'
       })
     }
-    await hubKV().del(`challenge:${attemptId}`)
+    await hubKV().del(`auth:challenge:${attemptId}`)
     return challenge
   },
   validateUser: user => z.object({
