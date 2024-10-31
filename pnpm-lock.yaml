@@ -39,8 +39,8 @@ importers:
         specifier: ^3.13.2
         version: 3.13.2(@parcel/watcher@2.4.1)(@types/node@22.1.0)(drizzle-orm@0.35.3(@cloudflare/workers-types@4.20241018.0)(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0))(encoding@0.1.13)(eslint@9.13.0(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.20.0)(terser@5.31.4)(typescript@5.6.3)(vite@5.4.8(@types/node@22.1.0)(terser@5.31.4))(webpack-sources@3.2.3)
       nuxt-auth-utils:
-        specifier: ^0.5.0
-        version: 0.5.0(@simplewebauthn/browser@11.0.0)(@simplewebauthn/server@11.0.0(encoding@0.1.13))(magicast@0.3.5)(rollup@4.20.0)(webpack-sources@3.2.3)
+        specifier: ^0.5.1
+        version: 0.5.1(@simplewebauthn/browser@11.0.0)(@simplewebauthn/server@11.0.0(encoding@0.1.13))(magicast@0.3.5)(rollup@4.20.0)(webpack-sources@3.2.3)
       zod:
         specifier: ^3.23.8
         version: 3.23.8
@@ -3925,8 +3925,8 @@ packages:
     engines: {node: ^16.10.0 || >=18.0.0}
     hasBin: true
 
-  nuxt-auth-utils@0.5.0:
-    resolution: {integrity: sha512-k3LFzvuFVqbQjKTb//h32oRpWcBMhX1QMg+26TMMBNmR+C6Apizn9ZDRF0vS4AQsrI6//p2kB2pVGbUPcI6QZQ==}
+  nuxt-auth-utils@0.5.1:
+    resolution: {integrity: sha512-qolN5nWKbtBqQFrqYQXQY9OpR0m+RYxLIPw6QoTCH5oYqrxJAkKjRXwW+kbIeCkh+zpedWqmbOF6xf12i6hwGg==}
     peerDependencies:
       '@simplewebauthn/browser': ^11.0.0
       '@simplewebauthn/server': ^11.0.0
@@ -9484,7 +9484,7 @@ snapshots:
 
   nuxi@3.14.0: {}
 
-  nuxt-auth-utils@0.5.0(@simplewebauthn/browser@11.0.0)(@simplewebauthn/server@11.0.0(encoding@0.1.13))(magicast@0.3.5)(rollup@4.20.0)(webpack-sources@3.2.3):
+  nuxt-auth-utils@0.5.1(@simplewebauthn/browser@11.0.0)(@simplewebauthn/server@11.0.0(encoding@0.1.13))(magicast@0.3.5)(rollup@4.20.0)(webpack-sources@3.2.3):
     dependencies:
       '@adonisjs/hash': 9.0.5
       '@nuxt/kit': 3.13.2(magicast@0.3.5)(rollup@4.20.0)(webpack-sources@3.2.3)
