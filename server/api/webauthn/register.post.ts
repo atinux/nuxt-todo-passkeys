@@ -50,5 +50,15 @@ export default defineWebAuthnRegisterEventHandler({
         name: dbUser.name || dbUser.username
       }
     })
+  },
+  async excludeCredentials(event, userName) {
+    return useDB()
+      .select({
+        id: tables.credentials.id,
+        transports: tables.credentials.transports
+      })
+      .from(tables.users)
+      .innerJoin(tables.credentials, eq(tables.credentials.userId, tables.users.id))
+      .where(eq(tables.users.username, userName.toLowerCase().trim()))
   }
 })
